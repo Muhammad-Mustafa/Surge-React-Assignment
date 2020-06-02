@@ -43,5 +43,5 @@ jobs:
       run: sudo install --global surge
 
     - name: running surge command
-      run: surge ./build ${{ SURGE_DOMAIN }} --token ${{ SURGE_TOKEN }}
+      run: surge ./build mustafa-react.surge.sh --token ${{ SURGE_TOKEN }}
 
