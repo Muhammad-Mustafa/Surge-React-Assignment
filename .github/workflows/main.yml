@@ -37,7 +37,7 @@ jobs:
         cmd: build # will run `yarn build` command
    
     - name: Building the application
-      run: yarn build
+      run: sudo yarn build
 
     - name: Installing Surge
       run: sudo install --global surge
