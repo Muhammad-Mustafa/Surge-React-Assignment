@@ -40,8 +40,8 @@ jobs:
       run: sudo yarn build
 
     - name: Installing Surge
-      run: sudo install --global surge
+      run: sudo install -g surge
 
     - name: running surge command
-      run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
+      run: sudo surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
 
